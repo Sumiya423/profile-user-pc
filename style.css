@@ -1,0 +1,214 @@
+html,body{
+    margin: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.page-container{
+    width: 100%;
+    height: auto;
+    background-color: #dcf2f5;
+}
+
+.nav__bar{
+    width: 100%;
+    height: 80px;
+    background-color: #fff;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.05);
+}
+.nav__bar-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.nav__bar-logo{
+    width: 600px;
+    display: flex;
+    align-items: center;
+}
+.nav__bar-logo-image{
+    height: 30px;
+    width: 56.09px;
+}
+.nav__bar-logo-image img{
+    line-height: 100%;
+}
+.nav__bar-logo-name{
+    line-height: 30px;
+    margin: 26.29px 0px 26.27px 7px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.nav__bar-logo-name::after{
+    content: ''" "'by CREW';
+    height: 10px;
+    font-size: 10px;
+}
+
+.nav__bar-menu{
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav__bar-menu-item1, .nav__bar-menu-item2{
+    font-size: 14px;
+    margin-right: 24px;
+}
+.nav__bar-menu-item3{
+    display: flex;
+    justify-content: center;
+    line-height: 30px;
+    width: 84px;
+    font-size: 13px;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin-right: 25.5px;
+}
+
+.nav__bar-menu-item4, .nav__bar-menu-item5, .nav__bar-menu-item6 img{
+    display: flex;
+    justify-content: center;
+    margin-left: 27px ;
+    height: 15px;
+    width: 19px;
+}
+
+.profile{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+.profile-picture{
+    height: 154px;
+    width: 154px;
+    margin: 72px 0px 24px 0px;
+}
+.profile-name{
+    display: flex;
+    align-items: center;
+    line-height: 24px;
+    width: 250px;
+    font-size: 24px;
+}
+.profile-name__name{
+    margin-right: 12px;
+    font-weight: 700;
+}
+.profile-address{
+    display: flex;
+    align-items: center;
+    margin: 40px 0px 45px 0px;
+}
+.profile-address__firends, .profile-address__location{
+    margin-right: 28px;
+}
+.profile-address__firends::before{
+    content: url(/pic/friends.png);
+    margin: 0px;
+    margin-right: 15px;
+    line-height: 15px;
+    
+}
+.profile-address__location::before{
+    content: url(/pic/location.png);
+    margin: 0px;
+    margin-right: 15px;
+    line-height: 15px;
+}
+.profile-address__organization::before{
+    content: url(/pic/organization.png);
+    margin: 0px;
+    margin-right: 15px;
+    line-height: 15px;
+}
+.profile-accounts{
+    width: 210px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    height: 24px;
+}
+.profile-accounts div ,.profile-accounts div img{
+    height: 100%;
+}
+.profile-details{
+    margin-top: 75px;
+    width: 1080px;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 4px;
+    display: flex;
+    color: #1A1A1A;
+    
+}
+.profile-details__skills{
+    padding: 40px;
+    font-weight: 700;
+    font-size: 16px;
+    width: 408px;
+}
+
+.profile-details__skills-first{
+    font-size: 10px;
+    font-weight: normal;
+    line-height: 10px;
+    background-color: #E03066;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    border-radius: 2px;
+    border: 1px solid #E03066;
+    width: fit-content;
+}
+.one{
+    margin-top: 16px;
+    padding: 5px 7px 5px 7px;
+}
+
+.two{
+    margin-top: 11px;
+    margin-bottom: 32px;
+    padding: 5px 7px 5px 7px;
+}
+.one:hover, .two:hover{
+    border: 1px solid #E03066;
+    color: #E03066;
+    background-color: #FFFFFF;
+}
+.profile-details__skills-second, .profile-details__skills-third{
+    font-size: 10px;
+    font-weight: normal;
+    line-height: 10px;
+    background-color: #e5f2f3;
+    display: inline-flex;
+    border-radius: 2px;
+    border: 1px solid #fff;
+    width: fit-content;
+    padding: 5px 7px 5px 7px;
+}
+.profile-details__skills-second:hover, .profile-details__skills-third:hover{
+    font-size: 15px;
+    line-height: 15px;
+    border-radius: 4px;
+    background-color: aqua;
+}
+.profile-details__skills-second:first-child{
+    margin-top: 16px;
+}
+.profile-details__skills-second:last-child{
+    margin-bottom: 32px;
+}
+.profile-details__skills-third:first-child{
+    margin-top: 16px;
+}
+
+.profile-details__para {
+    width: 672px;
+    height: 290px;
+    font-size: 17px;
+    padding: 40px 40px 40px 0px;
+    margin: 0px;
+}
