@@ -5,7 +5,7 @@ html,body{
 
 .page-container{
     width: 100%;
-    height: auto;
+    height: 100%;
     background-color: #dcf2f5;
 }
 
@@ -142,7 +142,7 @@ html,body{
     border-radius: 4px;
     display: flex;
     color: #1A1A1A;
-    
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 .profile-details__skills{
     padding: 40px;
@@ -209,6 +209,135 @@ html,body{
     width: 672px;
     height: 290px;
     font-size: 17px;
+    font-weight: 400;
     padding: 40px 40px 40px 0px;
     margin: 0px;
+}
+
+.card-title{
+    width: 1080px;
+    height: 24px;
+    font-size: 24px;
+    margin: 60px 0px 48px 0px;
+    font-weight: 700;
+    
+}
+.card-list{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 48px;
+    column-gap: 42px;
+}
+.card{
+    height: 431px;
+    width: 332px;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.card:hover{
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.card-image{
+    width: 332px;
+    height: 250px;
+}
+.card-details{
+    width: 300px;
+    height: 144px;
+    background-color: #FFFFFF;
+    padding: 16px 16px 20px 16px;
+    margin: 0px;
+}
+.card-tag{
+    display: flex;
+    margin-bottom: 21px;
+}
+.card-tag__one{
+    background-color: #E03066;
+    color:#fff;
+    line-height: 21px;
+    width: 51px;
+    border-radius: 2px;
+    margin-right: 8px;
+    font-size: 11px;
+    text-align: center;
+    border: 1px solid #E03066;
+}
+.card-tag__one:hover{
+    background-color: #ffffff;
+    color:#E03066;
+    border: 1px solid #E03066;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.card-tag__two{
+    background-color: #ffffff;
+    color:#E03066;
+    line-height: 21px;
+    width: 117px;
+    border-radius: 2px;
+    margin-right: 8px;
+    font-size: 11px;
+    text-align: center;
+    border: 1px solid #E03066;
+}
+.card-tag__two:hover{
+    background-color: #E03066;
+    color:#fff;
+    border: 1px solid #E03066;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.card-address{
+    display: flex;
+    margin-bottom: 9px;
+    height: 12px;
+}
+
+.card-address__location, .card-address__road{
+    line-height: 12px;
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    margin-right:16px ;
+}
+.card-address__location::before{
+    content: url('/pic/location.png');
+    line-height: 100%;
+    width: 9px;
+    margin-right: 5.5px ;
+}
+.card-address__road::before{
+    content: url('/pic/road.png');
+    height: 100%;
+    width: 9px;
+    margin-right: 5.5px ;
+}
+.card-description{
+    height: 48px;
+    width: 300px;
+    letter-spacing: 1px;
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.card-user{
+    display: flex;
+}
+
+.card-user-picture{
+    height: 20px;
+    weight: 20px;
+}
+.card-user-picture img{
+    height:100%;
+    width: 100%;
+}
+.card-user-name{
+    font-size: 12px;
+    text-align: center;
+    margin-left: 8px;
+}
+.card-visited{
+    opacity: 0.5;
 }
